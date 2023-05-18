@@ -29,17 +29,17 @@
       <div class="header__right">
         <button class="header__btn--create"></button>
         <button class="header__btn--notify"></button>
-        <img
+        <img class="header__btn--profile"
           src="https://yt3.ggpht.com/yti/AHyvSCDRkJuHu6Erisu_aNvKMr-A1GMUz3xyZC-0BvaYFQ=s88-c-k-c0x00ffffff-no-rj-mo"
         />
       </div>
     </header>
     <section>
       <main class="main">
-        <video class="main__video"></video>
-        <h1 class="main__title">
+        <iframe class="main__video" width="582" height="364" src="https://www.youtube.com/embed/V74l_zS1x8E" title="Contributing to Open Source Part I: The Easy Way" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h3 class="main__title">
           Contributing to Open Source Part 1: The Easy Way
-        </h1>
+        </h3>
         <div class="main__details">
           <div class="main__details__cta--left">
             <img
@@ -54,37 +54,37 @@
           </div>
           <div class="main__details__cta--right">
             <button class="main__details__cta__btn--vote">
-              <img src="" /> 498 <img src="" />
+              <img src="" /> 👍🏻 498 | 👎🏻  <img src="" />
             </button>
             <button class="main__details__cta__btn--vote">
-              <img src="" /> Share
+              <img src="" /> ↗️ Share
             </button>
             <button class="main__details__cta__btn--vote">
-              <img src="" /> Download
+              <img src="" placeholder="up"/>↓ Download
             </button>
             <button class="main__details__cta__btn--vote">...</button>
           </div>
         </div>
-        <description>
-          <h3>70K views 9 years ago</h3>
-          <p>
+        <description class="main__details__description">
+          <h4 class="main__details__heading">70K views 9 years ago</h4>
+          <p class="main__details__paragraph">
             How do you contribute to open source? In this video, I'll describe
             the easiest way to make a simple contribution to an open source
             project -- without using the command line, a text editor, "forking a
             repo", or even touching Git outside of Github. I'll also describe
             what kinds of contributions open source software projects are
             typically looking for. As an example, I use submitting a student
-            solution to a web development exercise from The Odin Project, a free
+            solution to a <!--  web development exercise from The Odin Project, a free
             online curriculum for learning web development with Ruby on Rails.
             You can find more information about that project at
-            <a href="http://theodinproject.com">http://theodinproject.com</a>.
+            <a href="http://theodinproject.com">http://theodinproject.com</a>. -->
           </p>
         </description>
       </main>
       <aside>
         <div class="advert">
           <div class="advert__top">
-            <title><h3>STEP INTO YOUR</h3> <h2>GREATNESS</h2></title>
+            <div><h3>STEP INTO YOUR</h3> <h2>GREATNESS</h2></div>
             <button class="advert__top__btn">i</button>
           </div>
           <div class="advert__bottom">
@@ -124,6 +124,30 @@
             </div>
         </div>
       </aside>
+      <section class="comments">
+        <div class="comments__header">
+          <h3>16 Comments</h3>
+          <button class="comments__sort"><span>--</span> Sort by</button>
+        </div>
+        <div class="comments__add">
+          <img class="comment__profile__img"
+          src="https://yt3.ggpht.com/yti/AHyvSCDRkJuHu6Erisu_aNvKMr-A1GMUz3xyZC-0BvaYFQ=s88-c-k-c0x00ffffff-no-rj-mo"
+        />
+        <input type="text" placeholder="Add a comment..." />
+        </div>
+        <div class="comment">
+          <img class="comment__profile_img" src="https://yt3.ggpht.com/ytc/AGIKgqMXwhlRt0wPXg2om2XOrZFMzxC1-5g9iSUWXQ=s176-c-k-c0x00ffffff-no-rj" />
+          <div>
+            <p class="comment__heading"><spam class="comment_heading_username">@1newbbie</spam> 4 years ago (edited)</p>
+            <p>A remark to what happening at 04:12 is: after clicking "propose file change", it now goes to commit page instead of the pull request creen as shown on the video. One need to click the commit name (e.g. patch-1 if it is the first commit of your branch) near the top of the screen to go to the pull request screen.</p>
+            <div>
+              <img class="comment__thumb--up" src="" />
+              <img class="comment__thumb--down" src="" />
+              Reply
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
   </body>
 </html>
