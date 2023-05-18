@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -39,29 +40,92 @@ button:disabled {
 
 .header__left,
 .header__right {
-  width: 20%;
-  justify-content: flex-end;
-  gap: 1.5rem;
-  padding-right: 2rem;
+  width: 19%;
+  justify-content: space-around;
+  /* gap: 0.5rem; */
+  /* padding-right: 2rem; */
 }
 
-.header__btn--menu,
 .header__btn--speak,
 .header__btn--create,
 .header__btn--notify,
 .header__btn--profile {
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 3rem;
+  width: 3rem;
   border-radius: 50%;
+  border: none;
+  background-color: white;
 }
 
-.header__logo {
+.header__btn--speak:hover,
+.header__btn--create:hover,
+.header__btn--notify:hover {
+  background-color: lightgray;
+  opacity: 0.8;
+}
+
+/* Hamber menu container */
+
+.menu-button-container {
+  display: flex;
   height: 3.5rem;
+  width: 3.5rem;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* border: 1px solid black; */
+  border-radius: 5rem;
+  left: 1rem;
+}
+
+.menu-button-container:hover {
+  background-color: lightgray;
+  opacity: 0.8;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* creating menu button */
+
+.menu-button {
+  display: block;
+  background-color: black;
+  position: absolute;
+  height: 0.1rem;
+  width: 1.75rem;
+  border-radius: 0.3rem;
+}
+
+.menu-button::before {
+  content: "";
+  position: absolute;
+  height: 0.1rem;
+  width: 1.75rem;
+  top: -0.55rem;
+  border-top: 1px solid black;
+}
+
+.menu-button::after {
+  content: "";
+  position: absolute;
+  height: 0.1rem;
+  width: 1.75rem;
+  top: 0.55rem;
+  border-top: 1px solid black;
+}
+
+/* header logo */
+
+.header__logo {
+  height: 3rem;
 }
 
 .header_left a {
   position: relative;
-  border: 1px solid red;
 }
 
 .header__left a::after {
@@ -69,33 +133,37 @@ button:disabled {
   display: inline-block;
   width: 1.2rem;
   height: 1.2rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   position: absolute;
   font-weight: 500;
 }
 
 .header__center {
-  width: 60%;
+  width: 70%;
   justify-content: center;
 }
 
 .header__search--input {
+  color: lightslategray;
   height: 4rem;
-  width: 60%;
+  width: 58%;
   border-radius: 5rem 0 0 5rem;
   padding-left: 2rem;
   font-size: 1.5rem;
   font-weight: 600;
-  border: 0.5px solid lightgray;
+  border: 0.5px solid lightslategray;
   border-right: none;
+  opacity: 0.7;
+  margin-left: 4rem;
 }
 
 .header__btn--search {
-  height: 4.25rem;
+  height: 4rem;
   width: 6rem;
   border-radius: 0 5rem 5rem 0;
   margin-right: 1rem;
-  border: 0.5px solid lightgray;
+  border: 0.5px solid lightslategrey;
+  background-color: #f8f8f8;
 }
 
 /* Main */
