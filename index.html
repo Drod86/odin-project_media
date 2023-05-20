@@ -45,7 +45,7 @@
         />
       </div>
     </header>
-    <section>
+    <section class="container">
       <main class="main">
         <iframe class="main__video" width="582" height="364" src="https://www.youtube.com/embed/V74l_zS1x8E" title="Contributing to Open Source Part I: The Easy Way" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <h3 class="main__title">
@@ -76,7 +76,7 @@
             <button class="main__details__cta__btn--vote">...</button>
           </div>
         </div>
-        <description class="main__details__description">
+        <div class="main__details__description">
           <h4 class="main__details__heading">70K views 9 years ago</h4>
           <p class="main__details__paragraph">
             How do you contribute to open source? In this video, I'll describe
@@ -85,12 +85,39 @@
             repo", or even touching Git outside of Github. I'll also describe
             what kinds of contributions open source software projects are
             typically looking for. As an example, I use submitting a student
-            solution to a web <!-- development exercise from The Odin Project, a free
+            solution to a web development exercise from The Odin Project, a free
             online curriculum for learning web development with Ruby on Rails.
             You can find more information about that project at
-            <a href="http://theodinproject.com">http://theodinproject.com</a>. -->
+            <a href="http://theodinproject.com">http://theodinproject.com</a>.
           </p>
-        </description>
+          
+        </div>
+        <input class="expand-btn" type="checkbox" />
+
+      <section class="comments comments__top">
+        <div class="comments__header">
+          <h3>16 Comments</h3>
+          <button class="comments__sort"><span>--</span> Sort by</button>
+        </div>
+        <div class="comments__add">
+          <img class="comment__profile__img"
+          src="https://yt3.ggpht.com/yti/AHyvSCDRkJuHu6Erisu_aNvKMr-A1GMUz3xyZC-0BvaYFQ=s88-c-k-c0x00ffffff-no-rj-mo"
+        />
+        <input type="text" placeholder="Add a comment..." />
+        </div>
+        <div class="comment">
+          <img class="comment__profile_img" src="https://yt3.ggpht.com/ytc/AGIKgqMXwhlRt0wPXg2om2XOrZFMzxC1-5g9iSUWXQ=s176-c-k-c0x00ffffff-no-rj" />
+          <div>
+            <p class="comment__heading"><spam class="comment_heading_username">@1newbbie</spam> 4 years ago (edited)</p>
+            <p>A remark to what happening at 04:12 is: after clicking "propose file change", it now goes to commit page instead of the pull request creen as shown on the video. One need to click the commit name (e.g. patch-1 if it is the first commit of your branch) near the top of the screen to go to the pull request screen.</p>
+            <div>
+              <img class="comment__thumb--up" src="" />
+              <img class="comment__thumb--down" src="" />
+              Reply
+            </div>
+          </div>
+        </div>
+      </section>
       </main>
       <aside>
         <div class="advert">
@@ -99,29 +126,41 @@
             <button class="advert__top__btn">i</button>
           </div>
           <div class="advert__bottom">
+            <div class="advert__channel">
             <img
-              class="channel__img"
+              class="channel--logo"
               src="https://yt3.ggpht.com/TGIQPKfvm-wCzEudcceacAoLqQMffzcQoKukeRoH6ycm7M15diLhbBbh-eO2jw0nd8d7uPcX=s88-c-k-c0x00ffffff-no-rj"
             />
             <div class="channel">
-              <h4 class="channel__name">Mindvalley</h4>
-              <p class="channel__sub">
-                <p>Ad</p>
-                <p>.</p>
+              <h3 class="channel__name">Mindvalley</h3>
+              <div class="channel__sub">
+                <p><b>Ad</b></p>
+                <p class="dot"><b>.</b></p>
                 <p>mindvalley.com</p>
-              </p>
+              </div>
             </div>
-            <button class="channel__btn--learn">Learn More</button>
+            </div>
+            <button class="channel__btn--subscribe channel__btn--learn">Learn More</button>
           </div>
         </div>
         <menu>
-            <button>All</button>
-            <button>Text</button>
-            <button>Sales</button>
-            <button>Related</button>
-            <button>Recently uploaded</button>
-            <button>Watched</button>
+            <button class="more-videos__btn more-videos__btn-all" >All</button>
+            <button class="more-videos__btn">From The Odin Project</button>
+            <button class="more-videos__btn">Watched</button>
         </menu>
+        <div class="thumbnails" >
+          <div class="thumbnail">
+            <img src="./youtubefoothumbnail.jpg"/>
+            <div>
+                <h3>Contributing to Open Source for the first time</h3>
+                <p>Meta Open Source</p>
+                <p>
+                    <p>234K views</p>
+                    <p>.</p>
+                    <p>3 years ago</p>
+                </p>
+            </div>
+        </div>
         <div class="thumbnail">
             <img src="./youtubefoothumbnail.jpg"/>
             <div>
@@ -134,8 +173,58 @@
                 </p>
             </div>
         </div>
+        <div class="thumbnail">
+            <img src="./youtubefoothumbnail.jpg"/>
+            <div>
+                <h3>Contributing to Open Source for the first time</h3>
+                <p>Meta Open Source</p>
+                <p>
+                    <p>234K views</p>
+                    <p>.</p>
+                    <p>3 years ago</p>
+                </p>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <img src="./youtubefoothumbnail.jpg"/>
+            <div>
+                <h3>Contributing to Open Source for the first time</h3>
+                <p>Meta Open Source</p>
+                <p>
+                    <p>234K views</p>
+                    <p>.</p>
+                    <p>3 years ago</p>
+                </p>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <img src="./youtubefoothumbnail.jpg"/>
+            <div>
+                <h3>Contributing to Open Source for the first time</h3>
+                <p>Meta Open Source</p>
+                <p>
+                    <p>234K views</p>
+                    <p>.</p>
+                    <p>3 years ago</p>
+                </p>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <img src="./youtubefoothumbnail.jpg"/>
+            <div>
+                <h3>Contributing to Open Source for the first time</h3>
+                <p>Meta Open Source</p>
+                <p>
+                    <p>234K views</p>
+                    <p>.</p>
+                    <p>3 years ago</p>
+                </p>
+            </div>
+        </div>
+        </div>
+        
       </aside>
-      <section class="comments">
+      <section class="comments comments__bottom">
         <div class="comments__header">
           <h3>16 Comments</h3>
           <button class="comments__sort"><span>--</span> Sort by</button>
